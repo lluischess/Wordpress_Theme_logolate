@@ -1,1 +1,9 @@
-<h1>Hi from post</h1>
+<?php get_header(); ?>
+
+<?php
+# Post template here
+
+?>
+
+
+<?php get_footer(); ?>

@@ -1,1 +1,9 @@
-<h1> hi there! this is my first theme</h1>
+<?php get_header(); ?>
+
+<?php
+# Index template here
+
+?>
+
+
+<?php get_footer(); ?>
