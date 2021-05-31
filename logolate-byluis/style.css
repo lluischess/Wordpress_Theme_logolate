@@ -1,0 +1,18 @@
+/*
+    Theme Name: logolate-byluis
+    Theme URI: https://github.com/lluischess/Wordpress_Theme_logolate
+    Author: Lluis Casamajor Paloma
+    Author URI: https://luiscasamajor.trimetastudio.com/
+    Description: Theme to make personalized budgets
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: https://www.gnu.org/licenses/gpl-3.0.html
+    Tags: Presupuestos, Preductos personalizados, css grid, theme mobile first
+    Text Domain: logolate-byluis
+
+*/
+
+
+body {
+    background-color: aqua;
+}
