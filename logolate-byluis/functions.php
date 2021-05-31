@@ -19,6 +19,12 @@ function byluis_nav() {
 add_action( 'init', 'byluis_nav');
 
 
+# Delete admn css core
+function my_filter_head() {
+   remove_action('wp_head', '_admin_bar_bump_cb');
+} 
+
+add_action('get_header', 'my_filter_head');
 
 
 

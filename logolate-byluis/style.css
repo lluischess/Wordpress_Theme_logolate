@@ -15,20 +15,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
 
 :root {
-    /* Predeterminate colors */
+    /* Colors */
     --primary-color: #262626;
     --secondary-color: #be9c79;
     --third-color: #522e2b;
     --body-color: #fff;
+
+    /* Fonts */
+    --primary-font: 'Open Sans';
 }
 
 html {
-    font-family: 'Open Sans';
     scroll-behavior: smooth;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin-top: 0 !important;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
     background-color: var(--body-color);
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.7;
 }
 
 img{ 
@@ -39,6 +51,7 @@ img{
 
 a {
     color: var(--third-color);
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,13 +66,31 @@ h1, h2 {
     font-weight: 600;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 ::selection {
     background: #be9c79;
     color: #fff;
 }
 p {
-    font-size: 14px;
     color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .primary-btn {
@@ -78,3 +109,22 @@ p {
     justify-content: flex-start;
     gap: 2rem;
 }
+
+/*******************************************************/
+/**********************  Header ************************/
+/*******************************************************/
+
+#section-header {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+#section-header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+#section-header .main-nav {
+    
+}
+

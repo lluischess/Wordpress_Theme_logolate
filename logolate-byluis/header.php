@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="container">
-        <div class="bar-header">
+        <div id="section-header" class="section-header">
             <div class="logo">
             <!-- search template ubication folder to img logo -->
                 <img src="<?php echo get_template_directory_uri() ?>\img\logo.svg" alt="logo">
