@@ -12,7 +12,7 @@
         <div id="section-header" class="section-header">
             <div class="logo">
             <!-- search template ubication folder to img logo -->
-                <img src="<?php echo get_template_directory_uri() ?>\img\logo.svg" alt="logo">
+                <a href="<?php echo get_home_url() ?>"><img src="<?php echo get_template_directory_uri() ?>\img\logo.svg" alt="logo"></a>
             </div>
             <?php 
 
