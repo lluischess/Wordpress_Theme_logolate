@@ -4,7 +4,9 @@
 # Scripts and Styles
 function byluis_scripts_styles(){
     wp_enqueue_style('style.css', get_stylesheet_uri() , array(), '1.0.0');
-    wp_enqueue_style('normalize.css', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
+    wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
+    wp_enqueue_style('slicknav', get_template_directory_uri().'/css/slicknav.css', array(), '1.0.10');
+    wp_enqueue_script('jquery.slicknav', get_template_directory_uri().'/js/jquery.slicknav.js', array('jquery'), '1.0.10', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'byluis_scripts_styles');

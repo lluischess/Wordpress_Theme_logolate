@@ -115,8 +115,8 @@ p {
 /*******************************************************/
 
 #section-header {
-    background-color: var(--secondary-color);
-    padding: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
 }
 
 .section-header {
@@ -127,14 +127,14 @@ p {
 #section-header .logo {
     display: flex;
     justify-content: center;
-    width: 400px;
+    width: 250px;
 }
 
 #section-header .main-nav a {
     color: var(--primary-color);
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     position: relative;
     z-index: 1;
@@ -195,7 +195,7 @@ p {
         justify-content: space-around;
     }
     #section-header .main-nav a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
