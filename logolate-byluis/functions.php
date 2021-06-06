@@ -1,15 +1,16 @@
 <?php
 # Importante que todas las funciones del tema añadan el nombre del tema al principio
 
-# Scripts and Styles
-function byluis_scripts_styles(){
+# Styles and Scripts
+function byluis_styles_scripts(){
     wp_enqueue_style('style.css', get_stylesheet_uri() , array(), '1.0.0');
     wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
     wp_enqueue_style('slicknav', get_template_directory_uri().'/css/slicknav.css', array(), '1.0.10');
-    wp_enqueue_script('jquery.slicknav', get_template_directory_uri().'/js/jquery.slicknav.js', array('jquery'), '1.0.10', true);
+    wp_enqueue_script('jqueryslicknav', get_template_directory_uri().'/js/jquery.slicknav.js', array('jquery'), '1.0.10');
+    wp_enqueue_script('scripts', get_template_directory_uri().'/js/scripts.js', array('jquery','jqueryslicknav'), '1.0.1');
 }
 
-add_action( 'wp_enqueue_scripts', 'byluis_scripts_styles');
+add_action( 'wp_enqueue_scripts', 'byluis_styles_scripts');
 
 # Navegation Nav 
 function byluis_nav() {
