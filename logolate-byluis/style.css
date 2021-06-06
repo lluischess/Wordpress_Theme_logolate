@@ -121,9 +121,8 @@ p {
 
 .section-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 #section-header .logo {
     display: flex;
     justify-content: center;
@@ -141,7 +140,7 @@ p {
     transition: color 0.8s;
 }
 #section-header .main-nav a:hover {
-    color: rgb(223, 223, 223);   
+    color: #fff;   
 }
 #section-header .main-nav a::before,
 #section-header .main-nav a::after {
@@ -151,10 +150,11 @@ p {
     display: block;
     width: 100%;
     height: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     z-index: -1;
     transform: scaleX(0);
     transition: transform 0.3s;
+    border-radius: 1px;
 }
 #section-header .main-nav a::before {
     top: 0;
@@ -177,28 +177,121 @@ p {
 #section-header .main-nav .current_page_item {
     border-bottom: 2px solid var(--primary-color);
 }
+#section-header .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#section-header .main-nav li {
+    margin-right: 2.2rem;
+}
+#section-header .main-nav li:last-of-type {
+    margin-right: 0;
+}
+#section-header .main-nav .menu {
+    display: flex;
+    justify-content: space-around;
+}
+#section-header .main-nav a {
+    font-size: 1.5rem;
+}
 
-@media (min-width: 768px){
+/* Menu Responsive 768 px */
+
+@media (max-width: 786px) {
     #section-header .main-nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        display: none;
     }
-    #section-header .main-nav li {
-        margin-right: 2.2rem;
-    }
-    #section-header .main-nav li:last-of-type {
-        margin-right: 0;
-    }
-    #section-header .main-nav .menu {
-        display: flex;
-        justify-content: space-around;
-    }
-    #section-header .main-nav a {
-        font-size: 1.5rem;
+}
+@media (min-width: 786px) {
+    .slicknav_menu {
+        display: none;
     }
 }
 
+/*******************************************************/
+/**********************  Footer ************************/
+/*******************************************************/
 
+#footer {
+    background-color: var(--third-color);
+    padding: 1.5rem;
+    padding: 4rem 0;
+    bottom: 0;
+    z-index: -1;
+}
+#footer p {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-right: 10%;
+}
+
+#footer .container-footer {
+    display: flex;
+    justify-content: center;
+}
+#footer .footer-nav .menu li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+#footer .footer-nav a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.8s;
+}
+
+#footer .footer-nav a:hover {
+    color: #fff;   
+}
+#footer .footer-nav a::before,
+#footer .footer-nav a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    border-radius: 1px;
+}
+#footer .footer-nav a::before {
+    top: 0;
+    opacity: 0.8;
+    transform-origin: top;
+}
+
+#footer .footer-nav a::after {
+    top: 50%;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
+#footer .footer-nav a:hover::before{
+    transform: scaleX(1);
+}
+#footer .footer-nav a:hover::after{
+    transform: scaleX(1);
+}
+
+/* Resposnive Footer */
+@media (min-width: 1069px) {
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    #footer p{
+        margin-top: 0;
+    }
+}
 
 
