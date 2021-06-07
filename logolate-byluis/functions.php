@@ -23,13 +23,21 @@ add_action( 'init', 'byluis_nav');
 
 
 # Delete admn css core
-function my_filter_head() {
+function byluis_my_filter_head() {
    remove_action('wp_head', '_admin_bar_bump_cb');
 } 
 
-add_action('get_header', 'my_filter_head');
+add_action('get_header', 'byluis_my_filter_head');
 
+#After Theme Activation
+function byluis_activate(){
+    # Activate Imatges Single
+    add_theme_support( 'post-thumbnails' );
 
+    # Img Size
+    add_image_size( 'mediumL', 750, 600);
+}
+add_action( 'after_setup_theme','byluis_activate');
 
 
 ?>
