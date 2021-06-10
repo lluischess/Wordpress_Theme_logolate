@@ -19,6 +19,7 @@
     --primary-color: #262626;
     --secondary-color: #be9c79;
     --third-color: #522e2b;
+    --four-color: #be9b794d;
     --body-color: #fff;
 
     /* Fonts */
@@ -44,9 +45,14 @@ body {
 }
 
 img{ 
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     border-radius: 5px;
+}
+
+.default-img {
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 a {
@@ -56,7 +62,10 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
-    color: var(--primary-color);
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    font-weight: bold;
+    letter-spacing: -4px;
+    border-radius: 20px;
     font-weight: 400;
 }   
 
@@ -81,16 +90,19 @@ ul {
 }
 
 ::selection {
-    background: #be9c79;
+    background: var(--secondary-color);
     color: #fff;
 }
 p {
     color: var(--primary-color);
 }
-
+main {
+    background-color:var(--four-color);
+}
 .container {
     width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .primary-btn {
@@ -110,6 +122,18 @@ p {
     gap: 2rem;
 }
 
+.title-center {
+    text-align: center;
+}
+
+.primary-title {
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+}
+
+.section {
+    padding: 4rem;
+}
 /*******************************************************/
 /**********************  Header ************************/
 /*******************************************************/
@@ -127,6 +151,10 @@ p {
     display: flex;
     justify-content: center;
     width: 250px;
+}
+#section-header .logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #section-header .main-nav a {
@@ -296,6 +324,21 @@ p {
 
 
 /*******************************************************/
-/**********************  Single ************************/
+/********************** Pages ************************/
 /*******************************************************/
 
+@media (min-width: 768px){
+    .page.with-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .with-sidebar .main-content {
+        flex: 0 0 calc(65% - 2rem);
+    }
+
+    .with-sidebar .content-sidebar {
+        flex: 0 0 calc(35% - 2rem);
+        margin: 2rem;
+    }
+}

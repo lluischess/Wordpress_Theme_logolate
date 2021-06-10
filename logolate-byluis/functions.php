@@ -12,6 +12,7 @@ function byluis_styles_scripts(){
 
 add_action( 'wp_enqueue_scripts', 'byluis_styles_scripts');
 
+
 # Navegation Nav 
 function byluis_nav() {
     register_nav_menus( array(
@@ -29,13 +30,18 @@ function byluis_my_filter_head() {
 
 add_action('get_header', 'byluis_my_filter_head');
 
+
 #After Theme Activation
 function byluis_activate(){
     # Activate Imatges Single
     add_theme_support( 'post-thumbnails' );
 
-    # Img Size
-    add_image_size( 'mediumL', 750, 600);
+    # Img Size Personalizada
+    # Tamaños de IMG Por defecto: thumbnail,medium,large,full
+    add_image_size( 'S', 250, 250);
+    add_image_size( 'M', 450, 400);
+    add_image_size( 'L', 750, 600);
+    add_image_size( 'XL', 1200, 900);
 }
 add_action( 'after_setup_theme','byluis_activate');
 

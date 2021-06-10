@@ -1,17 +1,23 @@
 
 <?php get_header(); ?>
 
-<?php
-# Page template here
-# Templete tags like the_title(); it prints all from de DB
-while (have_posts() ) { the_post(); ?>
+<main>
+    <div class="container page section with-sidebar">
+        <div class="main-content">
+            <?php if ( have_posts()): while (have_posts()): the_post(); ?>
+                <h1 class="title-center primary-title"><?php the_title(); ?></h1>
+                
+                <?php if (has_post_thumbnail()){
+                    the_post_thumbnail('L', array( 'class' => 'default-img'));
+                } ?>
 
-    <h1><?php the_title(); ?></h1>
-    <?php the_post_thumbnail('mediumL'); ?>
-    <?php the_content(); ?>
-    <p>Escrito por: <?php the_author(); ?></p>
-    <a href=""><?php the_date(); ?></a>
+                <?php the_content(); ?>
 
-<?php } ?>
+            <?php endwhile;
+                endif; ?>
+        </div>
+        <?php get_sidebar() ?>
+    </div>
+</main>
 
 <?php get_footer(); ?>
