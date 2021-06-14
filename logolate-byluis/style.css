@@ -254,6 +254,7 @@ main {
     justify-content: center;
     font-size: 1.4rem;
     margin-right: 10%;
+    margin-left: 10%;
 }
 
 #footer .container-footer {
@@ -340,5 +341,12 @@ main {
     .with-sidebar .content-sidebar {
         flex: 0 0 calc(35% - 2rem);
         margin: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .page .default-img {
+        max-width: 90%;
     }
 }
