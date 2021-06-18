@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container2">
         <div id="section-header" class="section-header">
             <div class="logo">
             <!-- search template ubication folder to img logo -->
@@ -18,7 +18,7 @@
 
             $gymluis_nav = array(
                 'theme_location' => 'main-nav',
-                'container' => 'nav',
+                'container2' => 'nav',
                 'container_class' => 'main-nav'
             );
             wp_nav_menu($gymluis_nav);
