@@ -45,5 +45,11 @@ function byluis_activate(){
 }
 add_action( 'after_setup_theme','byluis_activate');
 
+# Consultas reutilizables
+require get_template_directory() . '/inc/querys.php';
+
+
+
+
 
 ?>
