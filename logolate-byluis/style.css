@@ -96,9 +96,6 @@ ul {
 p {
     color: var(--primary-color);
 }
-main {
-    background-color:var(--four-color);
-}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -229,6 +226,19 @@ main {
 #section-header .main-nav a {
     font-size: 1.5rem;
 }
+
+#L-Slider .mySlides {
+    width: 100%;
+    display: none;
+    height: 450px;
+}
+
+#L-Slider .fondo {
+    object-fit: none;
+    object-position: bottom;
+    background-color: black;
+}
+
 
 /* Menu Responsive 768 px */
 

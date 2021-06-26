@@ -26,4 +26,16 @@
             ?>
         </div>
     </div>
+        <div id="L-Slider">
+            <img class="fondo mySlides" src="<?php echo get_template_directory_uri() ?>\img\Caramelos-personalizados.png">
+            <img class="fondo mySlides" src="<?php echo get_template_directory_uri() ?>\img\Chocolates-personalizados.png">
+            <img class="fondo mySlides" src="<?php echo get_template_directory_uri() ?>\img\Caramelos-personalizados.png">
+            <img class="fondo mySlides" src="<?php echo get_template_directory_uri() ?>\img\Chocolates-personalizados.png">
+
+            <button class="button Lblack display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button Lblack display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    
+    
+    
 </header>
