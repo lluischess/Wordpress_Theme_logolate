@@ -227,9 +227,16 @@ p {
     font-size: 1.5rem;
 }
 
+#L-Slider .bloc {
+    display: none;
+}
+
+#L-Slider .bloc1 {
+    display: block;
+}
+
 #L-Slider .mySlides {
     width: 100%;
-    display: none;
     height: 450px;
 }
 
@@ -239,6 +246,40 @@ p {
     background-color: black;
 }
 
+#L-Slider .display-left {
+    position: absolute;
+    top: 38%;
+    left: 1%;
+    transform: translate(0%,-50%);
+}
+#L-Slider .display-right {
+    position: absolute;
+    top: 38%;
+    right: 1%;
+    transform: translate(0%,-50%);
+}
+#L-Slider button {
+    border: none;
+    display: inline-block;
+    padding: 10px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+#L-Slider .Lblack {
+    color: rgb(255, 255, 255);
+    background-color: #292625;
+}
+
+#L-Slider .Lblack:hover {
+    color: #000;
+    background-color: rgb(221, 221, 221);
+}
 
 /* Menu Responsive 768 px */
 
