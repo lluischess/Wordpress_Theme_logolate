@@ -1,5 +1,5 @@
 <?php
-
+# Lista de Catálogos
 function byluis_lista_catalogos(){ ?>
 
 <ul class="lista-catalogos">
@@ -11,13 +11,13 @@ function byluis_lista_catalogos(){ ?>
         $catalogos = new WP_Query($args);
         while( $catalogos->have_posts()){
             $catalogos->the_post(); ?>
-        <li class="catalogo card">
-            <?php if (has_post_thumbnail()){
-                    the_post_thumbnail('medium', array( 'class' => 'default-img'));
-                } ?>
+        <li class="catalogo card gradient">
+            <a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()){
+                    the_post_thumbnail('SM', array( 'class' => 'default-img'));
+                } ?></a>
             <div class="container-card">
                 <a href="<?php the_permalink(); ?>">
-                    <h2 class=""><?php the_title(); ?></h2>
+                    <h3 class=""><?php the_title(); ?></h3>
                 </a>
                 <p class="p-catalogo-card"><?php the_field('resumen'); ?></p>
             </div>

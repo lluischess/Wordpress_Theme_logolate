@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
 });
 
 // Slider Header
+// Slider buttons
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -26,4 +27,23 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+// Auto Slider
+
+function changeSliader()
+{
+  cont_s = 0;
+
+  window.setInterval(
+    function(){
+      if(cont_s == 7){
+        plusDivs(1);
+        cont_s = 0;
+      } else {
+        cont_s++;
+      }
+    }
+  ,1000);
+}
+
 

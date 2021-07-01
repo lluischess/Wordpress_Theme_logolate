@@ -51,7 +51,7 @@ img{
 }
 
 .default-img {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -74,7 +74,11 @@ h1, h2 {
     letter-spacing: 1px;
     font-weight: 600;
 }
-
+h3 {
+    line-height: 1.11em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 h1 {
     font-size: 5rem;
 }
@@ -407,4 +411,41 @@ p {
     .page .default-img {
         max-width: 90%;
     }
+}
+
+
+/*******************************************************/
+/********************** Catalogos ************************/
+/*******************************************************/
+
+.lista-catalogos {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    flex: 0 0 calc(35% - 2rem);
+    margin-bottom: 6rem;
+}
+.card .container-card p {
+    font-weight: 600;
+}
+.card .container-card h3 {
+    line-height: 1;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+/* Responsive Catalogos */
+
+@media (max-width: 768px){
+    .card {
+        flex: 0 0 calc(50% - 2rem);
+        margin-bottom: 4rem;
+    }
+    .card .container-card {
+        padding: 3rem 0;
+    }
+     
 }

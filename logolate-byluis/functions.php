@@ -39,6 +39,7 @@ function byluis_activate(){
     # Img Size Personalizada
     # Tamaños de IMG Por defecto: thumbnail,medium,large,full
     add_image_size( 'S', 250, 250);
+    add_image_size( 'SM', 375, 400);
     add_image_size( 'M', 450, 400);
     add_image_size( 'L', 750, 600);
     add_image_size( 'XL', 1200, 900);
