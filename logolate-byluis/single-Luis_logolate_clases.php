@@ -1,3 +1,5 @@
+<!-- Single page Catálogos -->
+
 <?php get_header(); ?>
 
 <main>

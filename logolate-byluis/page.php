@@ -2,9 +2,8 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="container page section with-sidebar">
+    <div class="container page section">
         <?php get_template_part('template-parts/pages'); ?>
-        <?php get_sidebar() ?>
     </div>
 </main>
 

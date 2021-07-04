@@ -422,10 +422,9 @@ p {
     margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .card {
-    flex: 0 0 calc(35% - 2rem);
+    flex: 0 0 calc(33% - 2rem);
     margin-bottom: 6rem;
 }
 .card .container-card p {

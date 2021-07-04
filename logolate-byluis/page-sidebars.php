@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/*
+* Template Name: Paguina sin Sidebars
+*/
+
+get_header(); ?>
 
 <main>
     <div class="container page section with-sidebar">
