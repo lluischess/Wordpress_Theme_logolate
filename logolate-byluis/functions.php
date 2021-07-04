@@ -49,7 +49,7 @@ add_action( 'after_setup_theme','byluis_activate');
 # Consultas reutilizables
 require get_template_directory() . '/inc/querys.php';
 
-# Widgets byluis
+# Enable Widgets byluis
 
 function byluis_widgets(){
     register_sidebar( array(
