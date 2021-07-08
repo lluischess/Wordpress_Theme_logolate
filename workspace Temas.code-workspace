@@ -8,7 +8,11 @@
 		},
 		{
 			"path": "..\\..\\Users\\Lluis\\Local Sites\\web-gym\\app\\public\\wp-content\\plugins\\byluis_widgets"
+		},
+		{
+			"path": "..\\..\\PHP"
 		}
 	],
-	"settings": {}
+	"settings": {
+	}
 }

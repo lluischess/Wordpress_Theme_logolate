@@ -12,18 +12,19 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 :root {
     /* Colors */
-    --primary-color: #262626;
+    --primary-color: #424242;
     --secondary-color: #be9c79;
     --third-color: #522e2b;
     --four-color: #be9b794d;
     --body-color: #fff;
 
     /* Fonts */
-    --primary-font: 'Open Sans';
+    --primary-font: 'Roboto', sans-serif;
 }
 
 html {
@@ -447,4 +448,49 @@ p {
         padding: 3rem 0;
     }
      
+}
+
+/*******************************************************/
+/********************** Widget Cataloge ************************/
+/*******************************************************/
+
+
+.catalogo-sidebar {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.catalogo-sidebar:last-of-type {
+    border-bottom: none;
+}
+
+.catalogo-sidebar .sidebar-image {
+    flex: 0 0 30%;
+}
+.catalogo-sidebar .sidebar-image img {
+    display: block;
+}
+.catalogo-sidebar .container-sidebar {
+    flex: 0 0 calc(70% - 2rem);
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.container-sidebar a {
+    color: rgb(180, 6, 6);
+    font-weight: 600;
+}
+
+.container-sidebar h3 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.container-sidebar p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
